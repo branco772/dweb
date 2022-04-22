@@ -1,0 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Akshar:wght@300&family=Righteous&display=swap');
+.contenedor{
+    font-family: 'Akshar', sans-serif;
+    font-family: 'Righteous', cursive;
+     position: absolute;
+     top: 10%;
+     left: 30%;
+     border: 2px solid black;
+     padding: 60px  120px;
+}
+.est{
+    background-color: aqua;
+    padding: 10% 20%;
+}
+.title{
+    padding: 10% 20%;
+}
