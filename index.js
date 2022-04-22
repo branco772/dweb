@@ -1,3 +1,3 @@
 $(function(){
-   $('.contenedor').leave(); 
+   $('.contenedor').slideDown(); 
 });
