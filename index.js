@@ -1,3 +1,0 @@
-$(function(){
-   $('.contenedor').slideDown(); 
-});
