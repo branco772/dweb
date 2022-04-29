@@ -71,6 +71,9 @@ nav{
     width: 100%;
     left: -1200px;
 }
+nav a{
+    color: black;
+}
 header li{
     list-style: none;
     padding: 4%;
