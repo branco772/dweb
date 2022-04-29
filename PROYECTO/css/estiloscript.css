@@ -81,10 +81,7 @@ form .btn {
 	display: inline-block;
 	text-decoration: none;
 }
-header{
-	width: 100%;
-    background-color: wheat;
-}
+
 .contenedor1, .contenedor2,.contenedor3,.contenedor4{
 	color: white;
 }
@@ -128,13 +125,23 @@ footer{
 header{
     position: fixed;
     background-color: #0E6BA8;
-    margin-top: -2%;
-    margin-left: -1%;
-    width: 101%;
+    margin-top: -5%;
+    margin-left: -5%;
+    margin-bottom: 5%;
+    width: 110%;
+    height: 15%;
 }
-h1{text-align: left;
-    padding-left: 5%;
-    padding-top: 2%;
+nav{
+    position: absolute;
+    width: 100%;
+    left: -1200px;
+}
+header li{
+    list-style: none;
+    padding: 4%;
+    font-weight: bold;
+    cursor: pointer;
+    float: left;
 }
 img{
 	width: 60%;

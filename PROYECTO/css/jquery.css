@@ -29,11 +29,21 @@ a{
 header{
     position: fixed;
     background-color: #0E6BA8;
-    margin-top: -2%;
-    margin-left: -1%;
-    width: 101%;
+    margin-top: -5%;
+    margin-left: -5%;
+    margin-bottom: 5%;
+    width: 110%;
+    height: 15%;
 }
-h1{
-    padding-left: 5%;
-    padding-top: 2%;
+nav{
+    position: absolute;
+    width: 100%;
+    left: -1200px;
+}
+header li{
+    list-style: none;
+    padding: 4%;
+    font-weight: bold;
+    cursor: pointer;
+    float: left;
 }
