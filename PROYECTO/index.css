@@ -16,7 +16,7 @@ header{
 nav{
     position: absolute;
     width: 100%;
-    left: -800px;
+    left: -1000px;
 }
 header li{
     list-style: none;
