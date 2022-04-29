@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Abel&display=swap');
+body{
+    font-family: 'Abel', sans-serif;
+    background-color: #ffffff;
+    opacity: 90%;
+}
+header{
+    position: fixed;
+    background-color: #0E6BA8;
+    margin-top: -5%;
+    margin-left: -5%;
+    margin-bottom: 5%;
+    width: 110%;
+    height: 10%;
+}
+nav{
+    position: absolute;
+    width: 100%;
+    left: -1200px;
+}
+header li{
+    list-style: none;
+    padding: 4%;
+    font-weight: bold;
+    cursor: pointer;
+    float: left;
+}
+
+.contenedorMain{
+    display: flex;
+    padding-top: 5%;
+    padding-left: 15%;
+    padding-bottom: 5%;
+    width: 50%;
+    text-align: justify;
+    flex-wrap: wrap;
+    min-width: 250px;
+}
+.piePagina {
+    background-color: #001C55;
+    color: aliceblue;
+    position: absolute;
+    width: 100%;
+    display: flex;
+    margin-left: -1%;
+}
+.piePagina p{
+    padding: 20px;
+    float: left;
+}
+a{
+    color: white;
+    text-decoration: none;
+}
+img{
+    width: 50%;
+}
+
