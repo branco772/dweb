@@ -7,39 +7,52 @@ body{
 header{
     position: fixed;
     background-color: #0E6BA8;
-    margin-top: -2%;
-    margin-left: -1%;
-    width: 101%;
+    margin-top: -5%;
+    margin-left: -5%;
+    margin-bottom: 5%;
+    width: 110%;
+    height: 110px;
+}
+nav{
+    position: absolute;
+    width: 100%;
+    left: -800px;
 }
 header li{
     list-style: none;
-    float: left;
-    padding: 40px;
+    padding: 4%;
     font-weight: bold;
     cursor: pointer;
-}
-.contenedorMain{
-    float: right;
-    padding: 10% 30% 10% 20%;
-}
-footer{
     float: left;
-    width: 100%;
+}
+
+.contenedorMain{
+    display: flex;
+    padding-top: 5%;
+    padding-left: 15%;
+    padding-bottom: 5%;
+    width: 50%;
+    text-align: justify;
+    flex-wrap: wrap;
+    min-width: 250px;
 }
 .piePagina {
     background-color: #001C55;
     color: aliceblue;
-    padding: 20px;
+    position: absolute;
+    width: 100%;
+    display: flex;
+    margin-left: -1%;
 }
 .piePagina p{
-    display: inline-block;
-    padding: 30px;
+    padding: 20px;
+    float: left;
 }
 a{
     color: white;
     text-decoration: none;
 }
 img{
-    width: 100%;
+    width: 50%;
 }
 
