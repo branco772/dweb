@@ -117,11 +117,7 @@ footer{
     display: inline-block;
     padding: 30px;
 }
-.Main{
-	text-align: center;
-    float: right;
-    padding: 10% 30% 10% 20%;
-}
+
 header{
     position: fixed;
     background-color: #0E6BA8;
@@ -138,7 +134,7 @@ nav{
 }
 header li{
     list-style: none;
-    padding: 4%;
+    padding: 5%;
     font-weight: bold;
     cursor: pointer;
     float: left;
