@@ -2,6 +2,34 @@
 body{
     font-family: 'Abel', sans-serif;
 }
-a{
-    background-color: brown;
+header{
+    position: fixed;
+    background-color: #0E6BA8;
+    margin-top: -5%;
+    margin-left: -5%;
+    margin-bottom: 5%;
+    width: 110%;
+    height: 15%;
+}
+nav{
+    position: absolute;
+    width: 100%;
+    left: -1200px;
+}
+header li{
+    list-style: none;
+    padding: 4%;
+    font-weight: bold;
+    cursor: pointer;
+    float: left;
+}
+.Main{
+    display: flex;
+    padding-top: 5%;
+    padding-left: 15%;
+    padding-bottom: 5%;
+    width: 50%;
+    text-align: justify;
+    flex-wrap: wrap;
+    min-width: 250px;
 }
