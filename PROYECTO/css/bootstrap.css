@@ -1,6 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Abel&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abel&family=Water+Brush&display=swap');
 body{
     font-family: 'Abel', sans-serif;
+    font-family: 'Water Brush', cursive;
 }
 header{
     position: fixed;
