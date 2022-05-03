@@ -1,3 +1,4 @@
+
 @import url('https://fonts.googleapis.com/css2?family=Abel&display=swap');
 body{
     font-family: 'Abel', sans-serif;
@@ -25,7 +26,6 @@ header li{
     cursor: pointer;
     float: left;
 }
-
 .Main{
     display: flex;
     padding-top: 5%;
@@ -59,4 +59,3 @@ nav a{
 img{
     width: 50%;
 }
-
