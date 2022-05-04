@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="zxx">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css2/indexb.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <title>DISEÑO WEB</title>
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light" data-aos="zoom-in" data-aos-duration="1000">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="index.html">DISEÑO WEB</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="navbar-brand active" aria-current="page" href="dom.html">DOM</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="javascript.html">JAVASCRIPT</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="jquery.html">JQUERY</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="bootstrap.html">BOOTSTRAP</a>
+                  </li>
+                </ul>
+                <form class="d-flex">
+                  <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
+                  <button class="btn btn-outline-primary" type="submit">BUSCAR</button>
+                </form>
+              </div>
+            </div>
+          </nav>
+    </header>
+    <main>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-9 col-md-10 col-xl-8 justify-content-center pd-5  ">
+                    <img data-aos="zoom-in-down" data-aos-duration="3000" class="mx-auto d-block" src="https://desarrolloweb.com/media/264/dom.jpg" alt="">
+                    <div class="Main justify-content flex-wrap ">
+                            <p data-aos="flip-left" data-aos-duration="3000">
+                                Cuando comenzamos en el mundo del desarrollo web, normalmente comenzamos por aprender a escribir etiquetado o marcado HTML y además, añadir estilos CSS para darle color, forma y algo de interacción. Sin embargo, a medida que avanzamos, nos damos cuenta que en cierta forma podemos estar bastante limitados.
+
+                                Si únicamente utilizamos HTML/CSS, sólo podremos crear páginas «estáticas» (sin demasiada personalización por parte del usuario), pero si añadimos Javascript, podremos crear páginas «dinámicas». Cuando hablamos de páginas dinámicas, nos referimos a que podemos dotar de la potencia y flexibilidad que nos da un lenguaje de programación para crear documentos y páginas mucho más ricas, que brinden una experiencia más completa y con el que se puedan automatizar un gran abanico de tareas y acciones.
+                            </p>
+                        <div data-aos="fade-up-right" data-aos-duration="1000">
+                            <h1>¿Qué es el DOM?</h1>
+                            <p>
+                                Las siglas DOM significan Document Object Model, o lo que es lo mismo, la estructura del documento HTML. Una página HTML está formada por múltiples etiquetas HTML, anidadas una dentro de otra, formando un árbol de etiquetas relacionadas entre sí, que se denomina árbol DOM (o simplemente DOM).
+                                En Javascript, cuando nos referimos al DOM nos referimos a esta estructura, que podemos modificar de forma dinámica desde Javascript, añadiendo nuevas etiquetas, modificando o eliminando otras, cambiando sus atributos HTML, añadiendo clases, cambiando el contenido de texto, etc...
+
+                                Al estar "amparado" por un lenguaje de programación, todas estas tareas se pueden automatizar, incluso indicando que se realicen cuando el usuario haga acciones determinadas, como por ejemplo: pulsar un botón, mover el ratón, hacer click en una parte del documento, escribir un texto, etc...
+                            </p>
+                        </div>
+                        <div data-aos="fade-up-left" data-aos-duration="1000">
+                            <h1>El objeto document</h1>
+                            <p>
+                                En Javascript, la forma de acceder al DOM es a través de un objeto llamado document, que representa el árbol DOM de la página o pestaña del navegador donde nos encontramos. En su interior pueden existir varios tipos de elementos, pero principalmente serán  o : <br>
+
+                                no es más que la representación genérica de una etiqueta: HTMLElement. <br>
+                                es una unidad más básica, la cuál puede ser  o un nodo de texto. <br>
+                                Todos los elementos HTML, dependiendo del elemento que sean, tendrán un tipo de dato específico. Algunos ejemplos: <br>
+
+                                Obviamente, existen muchos tipos de datos específicos, uno por cada etiqueta HTML.
+                            </p>
+                            
+                        </div>
+                        <div data-aos="fade-down-right" data-aos-duration="1000">
+                            <h1>API nativa de Javascript</h1>
+                            <p>
+                                En los siguientes capítulos veremos que Javascript nos proporciona un conjunto de herramientas para trabajar de forma nativa con el DOM de la página, entre las que se encuentran: <br>
+                                <ol>
+                                    <li>Buscar etiquetas	Familia de métodos entre los que se encuentran funciones como .getElementById(), .querySelector() o .querySelectorAll(), entre otras.</li>
+                                    <li>Crear etiquetas	Una serie de métodos y consejos para crear elementos en la página y trabajar con ellos de forma dinámica.</li>
+                                    <li>Insertar etiquetas	Las mejores formas de añadir elementos al DOM, ya sea utilizando propiedades como .innerHTML o método como .appendChild(), .insertAdjacentHTML(), entre otros.</li>
+                                    <li>Gestión de CSS	Consejos para la utilización de la API .classList de Javascript que nos permite manipular clases CSS desde JS, de modo que podamos añadir, modificar, eliminar clases de CSS de un elemento de una forma práctica y cómoda.</li>
+                                    <li>Navegar por tags	Utilización de una serie de métodos y propiedades que nos permiten «navegar» a través de la jerarquía del DOM, ciñéndonos a la estructura del documento y la posición de los elementos en la misma.</li>
+                                </ol>
+                            </p>
+                            <h1>Librerías de terceros</h1>
+                            <p>
+                                En muchos casos, el rendimiento no es lo suficientemente importante como para justificar trabajar a bajo nivel, por lo que se prefiere utilizar algunas librerías de terceros que nos facilitan el trabajo a costa de reducir minimamente el rendimiento, pero permitiéndonos programar más rápidamente. <br>
+
+                                Muchas veces, también se eligen frameworks de Javascript para trabajar, que en cierta forma también te abstraen de tener que gestionar el DOM a bajo nivel, y lo cambian por realizar otras tareas o estrategias relacionadas con el framework escogido.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer >
+        <div >
+            <ul class="nav justify-content-center p-3 bg-primary">
+                <li class="nav-item">UPDS-CBBA | DISEÑO WEB</li>
+                <li class="nav-item">© 2022 PROYECTO 1</li>
+                <li class="nav-item">Política de privacidad</li>
+            </ul>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>AOS.init();</script>
+</body>
+</html>

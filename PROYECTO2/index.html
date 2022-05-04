@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zxx">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -11,132 +11,146 @@
 </head>
 <body>
     <header>
-        <div class="menu " data-aos="zoom-in" data-aos-duration="3000">
-
-            <ul class="nav  justify-content-center p-5">
-                <li class="nav-item">
-                    <a class="nav-link" href="index.html">DISEÑO WEB</a>
-                </li>
-            <li class="nav-item">
-              <a class="nav-link" href="">DOM</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">JAVASCRIPT</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link " href="#">JQUERY</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link " href="#">BOOTSTRAP</a>
-            </li>
-        </ul>
-    </div>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light" data-aos="zoom-in" data-aos-duration="1000">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="index.html">DISEÑO WEB</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="dom.html">DOM</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="javascript.html">JAVASCRIPT</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="jquery.html">JQUERY</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="bootstrap.html">BOOTSTRAP</a>
+                  </li>
+                </ul>
+                <form class="d-flex">
+                  <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
+                  <button class="btn btn-outline-primary" type="submit">BUSCAR</button>
+                </form>
+              </div>
+            </div>
+          </nav>
     </header>
     <main>
-        <img data-aos="zoom-in-down" data-aos-duration="3000" class="mx-auto d-block" src="data:image/png;base64,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" alt="">
-        <div class="Main justify-content flex-wrap ">
-            <p data-aos="flip-left" data-aos-duration="3000">
-                ¿Alguna vez has estado navegando en un sitio web, pero pensaste en irte porque el diseño no le atrajo, como la tipografía y la forma en que se distribuyó el contenido?
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-9 col-md-10 col-xl-8 justify-content-center pd-5  ">
+                    <img data-aos="zoom-in-down" data-aos-duration="3000" class="mx-auto d-block" src="https://ecdisis.com/wp-content/uploads/2020/07/diseno-web-2-1024x410.png" alt="">
+                    <div class="Main justify-content flex-wrap ">
+                        <p data-aos="flip-left" data-aos-duration="3000">
+                            ¿Alguna vez has estado navegando en un sitio web, pero pensaste en irte porque el diseño no le atrajo, como la tipografía y la forma en que se distribuyó el contenido?
 
-                ¿Y qué pasa con los sitios web lentos que no se cargan en tu teléfono o tablet justo cuando más necesita acceder rápidamente al contenido?
+                            ¿Y qué pasa con los sitios web lentos que no se cargan en tu teléfono o tablet justo cuando más necesita acceder rápidamente al contenido?
 
-                Todo esto hace que la experiencia de los visitantes a un sitio sea muy mala y la consecuencia de esto es la disminución de la conversión en de estos visitantes a clientes. Para que no suceda con el sitio web de tu empresa, debes tener un diseño web de calidad.
+                            Todo esto hace que la experiencia de los visitantes a un sitio sea muy mala y la consecuencia de esto es la disminución de la conversión en de estos visitantes a clientes. Para que no suceda con el sitio web de tu empresa, debes tener un diseño web de calidad.
 
-                Y para entender este concepto, las ventajas de invertir en el diseño de un sitio web y cómo identificar el perfil de un buen diseñador web, ¡sigue leyendo este post hasta el final!
-            </p>
-            <div data-aos="fade-up-right" data-aos-duration="1000">
-                <h1>¿Qué es el diseño web?</h1>
-                <p>
-                    <strong>El diseño web implica trabajo relacionado con el layout y diseño de páginas online, así como la producción de contenido, aunque generalmente se aplica a la creación de sitios web.</strong>
-                    En este caso, los diseñadores web crean las páginas utilizando lenguajes de marcado como HTML o XML.
-                    Por otro lado, la parte visual de los sitios está a cargo del CSS, término utilizado para estilizar los elementos escritos en HTML.
-                    Por lo tanto, es común que los diseñadores web utilicen ambos para construir un site porque juntos definirán cómo aparecerán las páginas en los navegadores.
-                    El proceso de creación de sitios se puede realizar desde herramientas como Adobe Dreamweaver (que requerirá que el profesional sepa más sobre los códigos) y CMS que son plataformas de administración de contenido.
-                    WordPress es uno de los más conocidos y prácticos porque tiene una serie de templates que pueden basar el sitio. El web designer tiene la tarea de instalarlos y personalizarlos según lo que cada cliente quiera.
-                </p>
-            </div>
-            <div data-aos="fade-up-left" data-aos-duration="1000">
-                <h1>¿Cuáles son los elementos clave del diseño web?</h1>
-                <p>
-                    Cuando hablamos de un buen diseño web, algunos puntos son fundamentales y no pueden faltar en tu sitio. Aquí están los aspectos más destacados:
-                </p>
-                <h1>Responsividad</h1>
-                <p>
-                    Como cada vez más las personas acceden a internet solo por teléfono celular, es muy importante que tu sitio sea adecuado para dispositivos móviles, es decir, que sea responsivo. 
-                </p>
-                <h1>Escaneabilidad</h1>
-                <p>
-                    ¿Conoces esos correos electrónicos que tienen un "bloque de texto" porque todo el mensaje está escrito en un solo párrafo? Leerlos es demasiado agotador, ¿no es así? Bueno, lo mismo ocurre con los visitantes de tu sitio si el no considerar la escaneabilidad textual.
-                </p>
-                <h1>Tipografía</h1>
-                <p>
-                    Si desde este punto comenzamos a escribir esta publicación con un tipo de letra completamente diferente, tu experiencia de lectura no sería muy agradable, ¿verdad? Después de todo, es una tipografía que no encajaría con el resto del contenido. Lo mismo debería aplicarse a tu sitio.
-                </p>
-                <h1>Velocidad de carga</h1>
-                <p>
-                    En un mundo donde todos parecen estar siempre apurados, tener un sitio web de carga rápida es esencial. Según Google, los sitios que tardan más de 2 segundos en cargarse dañan tanto la experiencia del usuario como la indexación del sitio.
-                </p>
-            </div>
-            <div data-aos="fade-down-right" data-aos-duration="1000">
-                <h1>¿Cuáles son las ventajas de invertir en un diseño web de calidad?</h1>
-                <h1>Buenas primeras impresiones</h1>
-                <p>
-                    El sitio es la presentación de la empresa que gestionas en los medios digitales. Cada vez que un posible cliente nuevo acude a tu empresa, te preocupas hacer una buena primera impresión.
-                    Bueno, con tu sitio, la situación no es diferente. Debe ser un reflejo inmediato del negocio.
-                    Un sitio web que no sea profesional hace que los visitantes no tengan una buena experiencia e incluso piensen que la empresa está desactualizada. Esto hará que busquen ofertas como la tuya en competidores que tienen un mejor sitio web.
-                </p>
-                <h1>Mejores procesos de SEO</h1>
-                <p>
-                    SEO o la optimización de motores de búsqueda se refiere a la optimización orgánica de tu sitio web entre los motores de búsqueda actuales y es uno de los puntos de estrategia digital que cada profesional de marketing necesita aprender.
+                            Y para entender este concepto, las ventajas de invertir en el diseño de un sitio web y cómo identificar el perfil de un buen diseñador web, ¡sigue leyendo este post hasta el final!
+                        </p>
+                        <div data-aos="fade-up-right" data-aos-duration="1000">
+                            <h1>¿Qué es el diseño web?</h1>
+                            <p>
+                                <strong>El diseño web implica trabajo relacionado con el layout y diseño de páginas online, así como la producción de contenido, aunque generalmente se aplica a la creación de sitios web.</strong>
+                                En este caso, los diseñadores web crean las páginas utilizando lenguajes de marcado como HTML o XML.
+                                Por otro lado, la parte visual de los sitios está a cargo del CSS, término utilizado para estilizar los elementos escritos en HTML.
+                                Por lo tanto, es común que los diseñadores web utilicen ambos para construir un site porque juntos definirán cómo aparecerán las páginas en los navegadores.
+                                El proceso de creación de sitios se puede realizar desde herramientas como Adobe Dreamweaver (que requerirá que el profesional sepa más sobre los códigos) y CMS que son plataformas de administración de contenido.
+                                WordPress es uno de los más conocidos y prácticos porque tiene una serie de templates que pueden basar el sitio. El web designer tiene la tarea de instalarlos y personalizarlos según lo que cada cliente quiera.
+                            </p>
+                        </div>
+                        <div data-aos="fade-up-left" data-aos-duration="1000">
+                            <h1>¿Cuáles son los elementos clave del diseño web?</h1>
+                            <p>
+                                Cuando hablamos de un buen diseño web, algunos puntos son fundamentales y no pueden faltar en tu sitio. Aquí están los aspectos más destacados:
+                            </p>
+                            <h1>Responsividad</h1>
+                            <p>
+                                Como cada vez más las personas acceden a internet solo por teléfono celular, es muy importante que tu sitio sea adecuado para dispositivos móviles, es decir, que sea responsivo. 
+                            </p>
+                            <h1>Escaneabilidad</h1>
+                            <p>
+                                ¿Conoces esos correos electrónicos que tienen un "bloque de texto" porque todo el mensaje está escrito en un solo párrafo? Leerlos es demasiado agotador, ¿no es así? Bueno, lo mismo ocurre con los visitantes de tu sitio si el no considerar la escaneabilidad textual.
+                            </p>
+                            <h1>Tipografía</h1>
+                            <p>
+                                Si desde este punto comenzamos a escribir esta publicación con un tipo de letra completamente diferente, tu experiencia de lectura no sería muy agradable, ¿verdad? Después de todo, es una tipografía que no encajaría con el resto del contenido. Lo mismo debería aplicarse a tu sitio.
+                            </p>
+                            <h1>Velocidad de carga</h1>
+                            <p>
+                                En un mundo donde todos parecen estar siempre apurados, tener un sitio web de carga rápida es esencial. Según Google, los sitios que tardan más de 2 segundos en cargarse dañan tanto la experiencia del usuario como la indexación del sitio.
+                            </p>
+                        </div>
+                        <div data-aos="fade-down-right" data-aos-duration="1000">
+                            <h1>¿Cuáles son las ventajas de invertir en un diseño web de calidad?</h1>
+                            <h1>Buenas primeras impresiones</h1>
+                            <p>
+                                El sitio es la presentación de la empresa que gestionas en los medios digitales. Cada vez que un posible cliente nuevo acude a tu empresa, te preocupas hacer una buena primera impresión.
+                                Bueno, con tu sitio, la situación no es diferente. Debe ser un reflejo inmediato del negocio.
+                                Un sitio web que no sea profesional hace que los visitantes no tengan una buena experiencia e incluso piensen que la empresa está desactualizada. Esto hará que busquen ofertas como la tuya en competidores que tienen un mejor sitio web.
+                            </p>
+                            <h1>Mejores procesos de SEO</h1>
+                            <p>
+                                SEO o la optimización de motores de búsqueda se refiere a la optimización orgánica de tu sitio web entre los motores de búsqueda actuales y es uno de los puntos de estrategia digital que cada profesional de marketing necesita aprender.
 
-                    Cuando las personas indaga sobre una compañía o servicio específico que satisfaga sus necesidades, buscan términos en los motores de búsqueda como Google. Estadísticamente, estos usuarios visitarán las primeras páginas que aparecen en el resultado de la búsqueda.
+                                Cuando las personas indaga sobre una compañía o servicio específico que satisfaga sus necesidades, buscan términos en los motores de búsqueda como Google. Estadísticamente, estos usuarios visitarán las primeras páginas que aparecen en el resultado de la búsqueda.
 
-                    Si tu sitio no está actualizado, significa que no contiene el contenido específico necesario para ser seleccionado e indexado por estos motores de búsqueda.
+                                Si tu sitio no está actualizado, significa que no contiene el contenido específico necesario para ser seleccionado e indexado por estos motores de búsqueda.
 
-                    Entonces, en lugar de estar en la primera página de resultados, puede aparecer entre las páginas 5 o 6, por ejemplo, y nunca ser visto por tu audiencia.
+                                Entonces, en lugar de estar en la primera página de resultados, puede aparecer entre las páginas 5 o 6, por ejemplo, y nunca ser visto por tu audiencia.
 
-                    Por lo tanto, tener un buen posicionamiento de SEO es uno de los mejores métodos para generar nuevos clientes sin tener que recurrir a anuncios de medios pagados.
-                </p>
-                <h1>Ventaja competitiva</h1>
-                <p>
-                    Tener un sitio web profesional te permite estar entre los primeros en tu nicho en comparación con los competidores que, si no tienen un sitio web tan bueno como el tuyo, siempre estar serán un paso atrás en el mundo digital.
+                                Por lo tanto, tener un buen posicionamiento de SEO es uno de los mejores métodos para generar nuevos clientes sin tener que recurrir a anuncios de medios pagados.
+                            </p>
+                            <h1>Ventaja competitiva</h1>
+                            <p>
+                                Tener un sitio web profesional te permite estar entre los primeros en tu nicho en comparación con los competidores que, si no tienen un sitio web tan bueno como el tuyo, siempre estar serán un paso atrás en el mundo digital.
 
-                    Es decir, cuando tu competencia apenas comienza a darse cuenta de los beneficios de tener un sitio web profesional, ya tendrás establecida tu presencia online y continuarás como líder y referencia en el mercado.
-                </p>
-                <h1>Mayor generación de ingresos</h1>
-                <p>
-                    Un sitio web diseñado profesionalmente atraerá más atención y, por lo tanto, a los visitantes. Las personas, por naturaleza, generalmente buscan lo que les atrae y esto no es diferente en el mundo del diseño web.
+                                Es decir, cuando tu competencia apenas comienza a darse cuenta de los beneficios de tener un sitio web profesional, ya tendrás establecida tu presencia online y continuarás como líder y referencia en el mercado.
+                            </p>
+                            <h1>Mayor generación de ingresos</h1>
+                            <p>
+                                Un sitio web diseñado profesionalmente atraerá más atención y, por lo tanto, a los visitantes. Las personas, por naturaleza, generalmente buscan lo que les atrae y esto no es diferente en el mundo del diseño web.
 
-                    Por eso es importante contar con profesionales del área para la construcción visual de tu sitio web, porque cuanta más gente visite y esté convencida a quedarse más tiempo, tanto por el contenido como por el diseño, más probabilidades tendrás de convertir a esos visitantes en clientes. Es decir, mayor será la posibilidad de generar ingresos.
-                </p>
-                <h1>Aumento del marketing boca a boca</h1>
-                    ¿Alguna vez has visitado un sitio web cuyo diseño atrajo tu atención hasta el punto de hacerte hablar a tus amigos y colegas al respecto? Créenos: Este efecto en las personas es más común de lo que piensas. Así que tener un sitio web de calidad puede fortalecer tu marketing de boca en boca.
+                                Por eso es importante contar con profesionales del área para la construcción visual de tu sitio web, porque cuanta más gente visite y esté convencida a quedarse más tiempo, tanto por el contenido como por el diseño, más probabilidades tendrás de convertir a esos visitantes en clientes. Es decir, mayor será la posibilidad de generar ingresos.
+                            </p>
+                            <h1>Aumento del marketing boca a boca</h1>
+                                ¿Alguna vez has visitado un sitio web cuyo diseño atrajo tu atención hasta el punto de hacerte hablar a tus amigos y colegas al respecto? Créenos: Este efecto en las personas es más común de lo que piensas. Así que tener un sitio web de calidad puede fortalecer tu marketing de boca en boca.
 
-                    Después de todo, un buen diseño y una navegación intuitiva brindan a tus visitantes una gran experiencia, además de atraer a las personas con una predisposición a conocer tu negocio, que es el primer paso para que se conviertan en clientes.
-                <h1>Acceso más práctico y rápido a tu negocio</h1>
-                <p>
-                    El acceso a Internet está disponible en casi todos los dispositivos móviles o tabletas en estos días.
+                                Después de todo, un buen diseño y una navegación intuitiva brindan a tus visitantes una gran experiencia, además de atraer a las personas con una predisposición a conocer tu negocio, que es el primer paso para que se conviertan en clientes.
+                            <h1>Acceso más práctico y rápido a tu negocio</h1>
+                            <p>
+                                El acceso a Internet está disponible en casi todos los dispositivos móviles o tabletas en estos días.
 
-                    Por lo tanto, tener una forma rápida y fácil para que los clientes encuentren tu número de teléfono, dirección o contacto por correo electrónico es una gran ventaja comercial que los sitios web pueden ofrecer.
+                                Por lo tanto, tener una forma rápida y fácil para que los clientes encuentren tu número de teléfono, dirección o contacto por correo electrónico es una gran ventaja comercial que los sitios web pueden ofrecer.
 
-                    Además, pueden descubrir fácilmente lo que haces y lo que puedes ofrecerles. No tienes que decir demasiado para llamar la atención de la gente. A veces, puedes dejar que el diseño hable por ti.
-                </p>
-            </div>
-            <div data-aos="fade-left" data-aos-duration="1000">
-                <h1>¿Qué hace un diseñador web?</h1>
-                <p>
-                    Si bien es común pensar que un diseñador web es responsable de crear sitios web atractivos y completamente funcionales, hacen más que eso.
+                                Además, pueden descubrir fácilmente lo que haces y lo que puedes ofrecerles. No tienes que decir demasiado para llamar la atención de la gente. A veces, puedes dejar que el diseño hable por ti.
+                            </p>
+                        </div>
+                        <div data-aos="fade-left" data-aos-duration="1000">
+                            <h1>¿Qué hace un diseñador web?</h1>
+                            <p>
+                                Si bien es común pensar que un diseñador web es responsable de crear sitios web atractivos y completamente funcionales, hacen más que eso.
 
-                    Los diseñadores web tienen en su trabajo tareas rutinarias relacionadas con la creación de un diseño para medios digitales y la creación de contenido.
+                                Los diseñadores web tienen en su trabajo tareas rutinarias relacionadas con la creación de un diseño para medios digitales y la creación de contenido.
 
-                    Por lo tanto, deben analizar tanto las necesidades del cliente como los objetivos para configurar un sitio web a fin de brindar a los visitantes la mejor experiencia.
+                                Por lo tanto, deben analizar tanto las necesidades del cliente como los objetivos para configurar un sitio web a fin de brindar a los visitantes la mejor experiencia.
 
-                    Además, diseñadores web deben saber cómo insertar gráficos, usar lenguajes como HTML y actualizar el sitio cuando sea necesario.
+                                Además, diseñadores web deben saber cómo insertar gráficos, usar lenguajes como HTML y actualizar el sitio cuando sea necesario.
 
-                    Ahora que has permanecido con nosotros hasta el final del texto, ya sabes qué perfil debe tener un buen profesional de diseño web.
+                                Ahora que has permanecido con nosotros hasta el final del texto, ya sabes qué perfil debe tener un buen profesional de diseño web.
 
-                    Por supuesto, puntos como UI y UX no se pueden omitir. Y para comprender como la experiencia del usuario aplica a los contenidos de los sitios web, entra a este artículo sobre UX writing.
-                </p>
+                                Por supuesto, puntos como UI y UX no se pueden omitir. Y para comprender como la experiencia del usuario aplica a los contenidos de los sitios web, entra a este artículo sobre UX writing.
+                            </p>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </main>
@@ -149,6 +163,7 @@
             </ul>
         </div>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>AOS.init();</script>
 </body>

@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="zxx">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css2/indexb.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <title>DISEÑO WEB</title>
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light" data-aos="zoom-in" data-aos-duration="1000">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="index.html">DISEÑO WEB</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="dom.html">DOM</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="javascript.html">JAVASCRIPT</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="navbar-brand active" aria-current="page" href="jquery.html">JQUERY</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="bootstrap.html">BOOTSTRAP</a>
+                  </li>
+                </ul>
+                <form class="d-flex">
+                  <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
+                  <button class="btn btn-outline-primary" type="submit">BUSCAR</button>
+                </form>
+              </div>
+            </div>
+          </nav>
+    </header>
+    <main>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-9 col-md-10 col-xl-8 justify-content-center pd-5  ">
+                    <img data-aos="zoom-in-down" data-aos-duration="3000" class="mx-auto d-block" src="http://www.elemento115.es/wp-content/uploads/2017/02/jquery-desarrollo-front-elemento115.jpg" alt="">
+                    <div class="Main justify-content flex-wrap ">
+                            <p data-aos="flip-left" data-aos-duration="3000">
+                                Para facilitar estos procesos tenemos jQuery, que bien podría resumirse en una navaja suiza para simplificar el modo en que accedemos al DOM de la web usando JavaScript.  jQuery es una librería desarrollada en 2006 por John Resig que permite añadir una capa de interacción AJAX entre la web y las aplicaciones que desarrollemos controlando eventos, creando animaciones y diferentes efectos para enriquecer la experiencia de usuario. <br>   
+
+                                jQuery es un software libre y de código abierto (posee un doble licenciamiento bajo la Licencia MIT y la Licencia Pública General de GNU v2). Cuenta con un diseño que facilita la navegación por un documento y seleccionar elementos DOM proporcionando a los desarrolladores de aplicaciones web complementos que agilizan el desarrollo de proyectos. Esto permite a los desarrolladores centrarse en lo importante y crear abstracciones para interacción y animación de bajo nivel, efectos avanzados y widgets temáticos de alto nivel sin invertir tiempo en desarrollar complejos algoritmos y métodos que los controlen desde cero y generando menos código que las aplicaciones hechas con JS puro. Por ese motivo jQuery es muy popular y podemos verlo en muchas páginas web. 
+                            </p>
+                        <div data-aos="fade-up-right" data-aos-duration="1000">
+                            <h1>Para qué sirve jQuery </h1>
+                            <p>
+                                ¿Para qué usar jQuery? Buena pregunta. Si bien es posible realizar el mismo trabajo utilizando solamente JavaScript,  jQuery es que es mucho menos verboso, es decir, se puede hacer lo mismo con muchas menos líneas de código, y esa es la clave de su éxito. El lema de jQuery es "escribe menos, haz más". <br>
+
+                                Si se escribe menos código, los errores serán menos frecuentes y, por esto, la librería se hizo muy popular desde su aparición en el año 2006. Los desarrolladores encuentran apoyo en la librería para sus proyectos, que además cuentan con una excelente documentación oficial donde se explican todas las funcionalidades. El único inconveniente es que la página de jQuery está en inglés, como la mayoría de la documentación del mundo de la programación. 
+                            </p>
+                        </div>
+                        <div data-aos="fade-up-left" data-aos-duration="1000">
+                            <h1>Características de jQuery (ejemplos de sintaxis)</h1>
+                            <p>
+                                Para entender cómo funciona jQuery debemos atender a sus características. <br>
+                                <ul>
+                                    <li>Constructor jQuery.  El constructor es una función sobrecargada que nos permite acceder a los elementos del DOM correspondientes a la consulta que realizamos. Por ejemplo: </li>
+                                </ul>
+                                jQuery('h2').css('color', ‘blue’’); <br>
+                                Nota: Seguro que ya has visto múltiples ejemplos donde se usa $ en lugar de jQuery. Pues bien, $ es una alias de jQuery.  Por ejemplo, tomando los ejemplos anteriores usando el alias sería: <br>
+
+                                $('h2').css('color', 'red'); <br>
+
+                                pero hay que tener en cuenta que, aunque usar $ es más cómodo que escribir jQuery, esto no siempre es válido cuando se utilizan otras librerías que usan la función $, ya que para esto se emplea el noconflict de jQuery.
+                                <ul>
+                                    <li>Trabajar por grupos(Iteración implícita). Los métodos en jQuery pueden realizar consultas mediante iteración implícita. Es decir, buscando múltiples coincidencias y aplicando modificaciones para cada elemento en una única instrucción, Por ejemplo: </li>
+                                </ul>
+                                $('h2') Nos devuelve el conjunto de los títulos nivel 2 (h2), pero si por ejemplo quisiéramos cambiar el color a un gris oscuro (#333), esto lo podríamos hacer de la siguiente manera: <br>
+                                <div class="text-primary">
+                                    $.each($('h2'), function() { <br>
+
+                                        $(this).css("color", "#333"); <br>
+                                        
+                                        }); 
+                                </div>
+                                Diseñado para realizar consultas a través del DOM. jQuery nos permite realizar consultas CSS, xPath y transversales.Por ejemplo: <br>
+                                $('h2 + p').css('color', '#946900'); <br>
+
+                                $('h2 + p').css(    'font-style', 'italic'); <br>
+                                Con esto indicamos que todo párrafos (p) inmediatamente seguidos(+) de un título nivel 2(h2), van a tomar el color de la letra café y el estilo de la fuente será del tipo itálica. <br>
+                                <ul>
+                                    <li>Es un sistema modular donde podemos anidar consultas o tareas de una manera sencilla. Por ejemplo: <br>
+
+                                        $('h2').css('color','red'); <br>
+                                        $('h2').text ('Cambiando el contenido a todos los elementos h2'); <br>
+                                        
+                                        Ahora lo comparamos con el siguiente código: <br>
+                                        
+                                        $('h2') <br>
+                                        
+                                                    .css ('color','red') <br>
+                                        
+                                                    .text ('Cambiando el contenido a todos los elementos h2');</li>
+                                </ul>
+                            </p>
+                            
+                        </div>
+                        <div data-aos="fade-down-right" data-aos-duration="1000">
+                            <h1>Ventajas de jQuery</h1>
+                            <p>
+                                En este punto las ventajas de jQuery son claras. Nos permite realizar consultas sobre la estructura del DOM de la web y realizar personalizaciones a medida como aplicar diferentes estilos y efectos en función de los eventos que definamos. Todo esto se logra mediante una sintaxis simplificada y fácil de entender que permite un desarrollo ágil en nuestros proyectos. <br>
+
+                                Gracias a su modularidad es posible también desarrollar complejos scripts que permiten anidar consultas y correr funciones que contienen diferentes métodos que nos servirán por ejemplo para validar formularios al vuelo antes de su envío.
+                            </p>
+                        </div>
+                        <div data-aos="fade-down-left" data-aos-duration="1000">
+                            <h1>Alternativas a jQuery</h1>
+                            <p>
+                                Por supuesto, jQuery no es la única solución existente. Desde su primera versión en 2006 hasta hoy han aparecido otras alternativas como AngularJS, BackboneJS, ReactJS y otros. Ante tanta variedad es fácil hacerse las preguntas: ¿Qué framework o librería de JavaScript debería usar? ¿debería usar siquiera algún framework o librería? ¿y si lo programo todo en el servidor? <br>
+
+                                Angular JS  es probablemente la alternativa más popular en el mercado. Angular es un framework para la creación de páginas web SPA (Single Page Application) mantenido por Google. Cuando una web carga todo a la vez en un mismo documento, Angular lo que hace por debajo es cambiar la vista al navegar por la página para que dé la apariencia de una web normal. ¿Qué ventajas tiene? <br>
+                                <ul>
+                                    <li>Velocidad de carga lenta la primera vez que se abre la web, pero luego navegar por la web es instantáneo debido a que se carga toda la web de golpe.</li>
+                                    <li>Como SPA es una página, solo hay una ruta que tiene que enviar el servidor.</li>
+                                    <li>Aplicaciones modulares y escalares.</li>
+                                    <li>Utiliza Lenguaje Typescript, con una sintaxis muy parecida a Java. </li>
+                                </ul>
+                                Otra alternativa es React. Seguro que habrás oído este nombre antes o te resulta familiar. React es la competencia directa de Angular y jQuery en construcción de interfaces de usuario y componentes DOM.  
+
+                                Desarrollada por Facebook, React es una librería Javascript de código abierto que les ha beneficiado en el desarrollo de algunas de sus plataformas, como por ejemplo Instagram.
+
+                                ReactJS es una librería enfocada en la visualización que ofrece grandes beneficios en performance, modularidad y promueve un flujo muy claro de datos y eventos, facilitando la planificación y desarrollo de apps complejas. 
+
+                                ¿Por qué no es tan popular como Angular o jQuery? Gran parte del problema viene desde sus primeras versiones React, lo que se conoce como un framework “Frankenstein”, porque cuando quieras realizar otras cosas como routing o comunicación con el servidor tendrás que buscar librerías alternativas e integrarlas a tu proyecto para disponer de las capacidades que necesitas. 
+
+                                ¿Cual es mejor? Todo depende. La respuesta es que cada alternativa está pensada para cubrir distintos tipos de necesidades. Así, en ciertos proyectos, jQuery será la opción más lógica, mientras que en otros Angular o React tendrán mayor peso. Así que antes de tomar una decisión lo mejor es tomar lápiz y papel para evaluar con qué proyectos necesitaremos cada una de estas alternativas. 
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer >
+        <div >
+            <ul class="nav justify-content-center p-3 bg-primary">
+                <li class="nav-item">UPDS-CBBA | DISEÑO WEB</li>
+                <li class="nav-item">© 2022 PROYECTO 1</li>
+                <li class="nav-item">Política de privacidad</li>
+            </ul>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>AOS.init();</script>
+</body>
+</html>
