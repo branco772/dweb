@@ -5,4 +5,5 @@ $(function(){
     $("main").slideDown(3000);
     $("img").hide(100);
     $("img").show(3000);
+    $("img").rotate(30);
 });
