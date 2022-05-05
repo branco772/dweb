@@ -3,7 +3,7 @@
 body{
     font-family: 'Abel', sans-serif;
     background-color: #ffffff;
-    opacity: 90%;
+
 }
 header{
     position: fixed;
@@ -13,6 +13,7 @@ header{
     margin-bottom: 5%;
     width: 110%;
     height: 15%;
+    opacity: 100%;
 }
 nav{
     position: absolute;
@@ -26,7 +27,9 @@ header li{
     cursor: pointer;
     float: left;
 }
-.Main{
+
+.contenedorMain{
+    position: absolute;
     display: flex;
     padding-top: 5%;
     padding-left: 15%;
@@ -43,6 +46,7 @@ header li{
     width: 100%;
     display: flex;
     margin-left: -1%;
+    margin-top:230%;
 }
 .piePagina p{
     padding: 20px;
@@ -59,3 +63,4 @@ nav a{
 img{
     width: 50%;
 }
+
