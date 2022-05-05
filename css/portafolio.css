@@ -2,14 +2,14 @@
 .contenedor{
     font-family: 'Akshar', sans-serif;
     font-family: 'Righteous', cursive;
-     position: absolute;
+     /*position: absolute;
      top: 10%;
      left: 30%;
      border: 4px solid black;
      padding: 60px  120px;
-     box-shadow: 5px 5px 5px 5px #0582CA;
+     box-shadow: 5px 5px 5px 5px #0582CA;*/
 }
-.est{
+/*.est{
     background-color: aqua;
     padding: 10% 20%;
 }
@@ -18,4 +18,4 @@
 }
 p{
     text-align: center;
-}
+}*/
